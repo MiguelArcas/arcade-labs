@@ -22,12 +22,13 @@ arcade.draw_arc_outline(340, 530, 10, 10, arcade.color.RED,
 # Drawing the cross button
 arcade.draw_rectangle_filled(400, 460, 25,100, arcade.color.LAVENDER_GRAY)
 arcade.draw_rectangle_filled(400, 460, 100,25, arcade.color.LAVENDER_GRAY)
+arcade.draw_line(400, 500, 400, 480, arcade.color.BLACK)
 
 # Drawing the A button
-arcade.draw_circle_filled(400, 335, 35, arcade.color.LAVENDER_GRAY)
-arcade.draw_text("A", 400, 317,
-                         arcade.color.BLACK, font_size=40, anchor_x="center")
-arcade.draw_circle_outline(400, 335, 37, arcade.color.BLACK)
+arcade.draw_circle_filled(400, 350, 25, arcade.color.LAVENDER_GRAY)
+arcade.draw_text("A", 400, 337,
+                         arcade.color.BLACK, font_size=30, anchor_x="center")
+arcade.draw_circle_outline(400, 350, 27, arcade.color.BLACK)
 
 # Drawing the 1 button
 arcade.draw_circle_filled(400, 175, 15, arcade.color.LAVENDER_GRAY)
@@ -41,6 +42,11 @@ arcade.draw_text("2", 400, 113,
                          arcade.color.BLACK, font_size=25, anchor_x="center")
 arcade.draw_circle_outline(400, 125, 18, arcade.color.BLACK)
 
+# Drawing the connected lights squares
+arcade.draw_rectangle_filled(348, 75, 15, 15, arcade.color.BLACK_OLIVE)
+arcade.draw_rectangle_filled(383, 75, 15, 15, arcade.color.BLACK_OLIVE)
+arcade.draw_rectangle_filled(418, 75, 15, 15, arcade.color.BLACK_OLIVE)
+arcade.draw_rectangle_filled(453, 75, 15, 15, arcade.color.BLACK_OLIVE)
 
 # --- Finish drawing ---
 arcade.finish_render()
