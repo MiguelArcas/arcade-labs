@@ -1,4 +1,5 @@
 import arcade
+import arcade.color
 
 arcade.open_window(800, 600, "Drawing")
 
@@ -18,8 +19,8 @@ arcade.draw_rectangle_outline(400,300,152, 502, arcade.color.BLACK)
 arcade.draw_text("POWER", 340, 510,
                          arcade.color.BLACK, font_size=5, anchor_x="center")
 arcade.draw_circle_outline(340, 530, 10, arcade.color.BLACK)
-arcade.draw_arc_outline(340, 510, 40, 40,
-                        arcade.color.RED, 240, 300, 10)
+arcade.draw_circle_outline(340,530,6,arcade.color.RED)
+arcade.draw_line(340,537,340,529, arcade.color.RED)
 
 # Drawing the cross button
 arcade.draw_rectangle_filled(400, 460, 25,100, arcade.color.LAVENDER_GRAY)
@@ -40,23 +41,42 @@ arcade.draw_circle_outline(400, 300, 12, arcade.color.BLACK)
 arcade.draw_rectangle_filled(396,298,4,10, arcade.color.BABY_BLUE)
 arcade.draw_rectangle_filled(404,298,4,10, arcade.color.BABY_BLUE)
 arcade.draw_triangle_filled(400,310,390,298,410,298, arcade.color.BABY_BLUE)
+arcade.draw_text("HOME",400,280,
+                 arcade.color.BLACK, font_size=5, anchor_x="center")
 
 #Drawing the + and - buttons
 arcade.draw_circle_outline(365, 300, 8, arcade.color.BLACK)
+arcade.draw_circle_filled(365, 300, 7, arcade.color.LAVENDER_GRAY)
 arcade.draw_line(370,300,360,300, arcade.color.BLACK)
 arcade.draw_circle_outline(435, 300, 8, arcade.color.BLACK)
+arcade.draw_circle_filled(435, 300, 7, arcade.color.LAVENDER_GRAY)
 arcade.draw_line(440,300,430,300, arcade.color.BLACK)
 arcade.draw_line(436,305,436,295, arcade.color.BLACK)
 
 #Drawing the speaker
-arcade.draw_circle_filled(410,275,3, arcade.color.BLACK)
-arcade.draw_circle_filled(390,275,3, arcade.color.BLACK)
-arcade.draw_circle_filled(410,265,4, arcade.color.BLACK)
-arcade.draw_circle_filled(390,265,4, arcade.color.BLACK)
-arcade.draw_circle_filled(410,255,4, arcade.color.BLACK)
-arcade.draw_circle_filled(390,255,4, arcade.color.BLACK)
-arcade.draw_circle_filled(410,245,3, arcade.color.BLACK)
-arcade.draw_circle_filled(390,245,3, arcade.color.BLACK)
+arcade.draw_circle_filled(415,270,3, arcade.color.BLACK)
+arcade.draw_circle_filled(400,270,3, arcade.color.BLACK)
+arcade.draw_circle_filled(385,270,3, arcade.color.BLACK)
+
+arcade.draw_circle_filled(415,260,4, arcade.color.BLACK)
+arcade.draw_circle_filled(400,260,4, arcade.color.BLACK)
+arcade.draw_circle_filled(385,260,4, arcade.color.BLACK)
+
+arcade.draw_circle_filled(415,250,4, arcade.color.BLACK)
+arcade.draw_circle_filled(400,250,4, arcade.color.BLACK)
+arcade.draw_circle_filled(385,250,4, arcade.color.BLACK)
+
+arcade.draw_circle_filled(415,240,4, arcade.color.BLACK)
+arcade.draw_circle_filled(400,240,4, arcade.color.BLACK)
+arcade.draw_circle_filled(385,240,4, arcade.color.BLACK)
+
+arcade.draw_circle_filled(415,230,4, arcade.color.BLACK)
+arcade.draw_circle_filled(400,230,4, arcade.color.BLACK)
+arcade.draw_circle_filled(385,230,4, arcade.color.BLACK)
+
+arcade.draw_circle_filled(415,220,3, arcade.color.BLACK)
+arcade.draw_circle_filled(400,220,3, arcade.color.BLACK)
+arcade.draw_circle_filled(385,220,3, arcade.color.BLACK)
 
 # Drawing the 1 button
 arcade.draw_circle_filled(400, 175, 15, arcade.color.LAVENDER_GRAY)
